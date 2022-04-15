@@ -15,7 +15,7 @@ public class Main {
     }
     private static void ipProverka(String... Ipadress) {
         //Pattern ip = Pattern.compile("(\\d{0,3}\\.){3}\\d{0,3}");
-        Pattern ip = Pattern.compile("(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\\.(?!$)|$)){4}");
+        Pattern ip = Pattern.compile("(([1-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\\.(?!$)|$)){4}");
         // рассматривает 5 варианта
         //{4} - число повторений
         for (String nip : Ipadress) {
